@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* font-family: 'Raleway', sans-serif !important; */
     /* font-family: 'Lato', sans-serif !important; */
@@ -25,8 +29,12 @@ body {
 .navbar-toggler-icon {
     color: #01744F !important;
 }
+.active {
+    background: #332a6c;
+    color: white !important;
+    border-radius: .25rem !important;
+}
 /* END Modified bootstrap classes*/
-
 
 /* CUSTOM Classes */
 .gradient {

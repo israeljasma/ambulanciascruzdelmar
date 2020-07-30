@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 
-<body class="gradient">
+<body class="gradient" data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="60.688"
@@ -58,8 +58,8 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item ml-2 text-purple active">
-                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex" href="#"> <svg
+                    <li class="nav-item ml-2 text-purple">
+                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex p-2" href="#home"> <svg
                                 width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -69,7 +69,7 @@
                             </svg>&nbsp;Inicio <span class="sr-only">(actual)</span></a>
                     </li>
                     <li class="nav-item ml-2 text-purple">
-                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex" href="#"><svg
+                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex p-2" href="#services"><svg
                                 width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="wrench" class="svg-inline--fa fa-wrench fa-w-16" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -79,7 +79,7 @@
                             </svg>&nbsp;Servicios</a>
                     </li>
                     <li class="nav-item ml-2 text-purple">
-                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex" href="#"><svg
+                        <a class="nav-link text-uppercase font-weight-bold letter-spacing-1 d-flex p-2" href="#contact"><svg
                                 width="20" height="20" aria-hidden="true" focusable="false" data-prefix="fas"
                                 data-icon="address-book" class="svg-inline--fa fa-address-book fa-w-14" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -118,7 +118,7 @@
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0"
             nonce="lht4ORxd"></script>
-        <section>
+        <section id="home">
             <div id="carouselAmbulance" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselAmbulance" data-slide-to="0" class="active"></li>
@@ -187,7 +187,7 @@
         </div>
 
         <section class="container-fluid bg-white border border-white">
-            <div class="row my-4">
+            <div class="row my-4" id="services">
                 <div class="col-sm-10 mx-auto text-justify">
                     <h1 class="text-center font-weight-bold mb-3 text-purple">Servicios</h1>
                     <div class="hr"></div>
@@ -348,7 +348,7 @@
                 </div>
             </div>
 
-            <div class="row my-4">
+            <div class="row my-4" id="contact">
                 <div class="col-sm-10 mx-auto">
                     <h1 class="text-center font-weight-bold mb-3 text-purple">Contacto</h1>
                     <div class="hr"></div>
