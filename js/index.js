@@ -6,3 +6,8 @@ $(".gallery").magnificPopup({
         enabled: true
     }
 });
+
+
+function generateMessage() {
+    $('#modal').modal('hide');
+}
