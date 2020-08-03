@@ -35,12 +35,22 @@ body {
     border-radius: .25rem !important;
 }
 .carousel-caption {
-    top: 35%;
-    /* left: 0 !important; */
+    top: 15%;
+}
+
+.carousel-caption h2 {
+    font-size: 1.6rem;
 }
 /* END Modified bootstrap classes*/
 
 /* CUSTOM Classes */
+.main-section {
+    background:#01744F;
+    width:100%;
+    height:70vh;
+    color: whitesmoke;
+}
+
 #contact::after {
     display: block;
     position: absolute;
@@ -139,11 +149,32 @@ body {
     .gallery-section .image{
         flex: 50%;
     }
+
+    .carousel-caption .btn {
+        display: block;
+    }
 }
   
 @media screen and (max-width:480px) {
-    .gallery-section .image{
+    .gallery-section .image {
         flex: 100%;
     }
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-caption {
+        top: 25%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .carousel-caption {
+        top: 25%;
+    }
+
+    .container-images {
+        max-width: 450px;
+    }
+
 }
 /* END CUSTOM Classes */
