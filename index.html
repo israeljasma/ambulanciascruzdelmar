@@ -17,11 +17,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="gradient" data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" data-aos="fade-down">
             <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="200" height="60.688"
                     viewBox="0 0 411.545 96.688">
                     <g transform="translate(-256.799 -474.983)">
@@ -138,22 +139,28 @@
                         <div class="row">
                             <div class="col-lg text-left">
                                 <div class="container-images position-relative d-none d-lg-block w-100 h-100">
-                                    <img loading="lazy" class="img-fluid position-absolute img-ambulance" src="img/amb_carousel_1.png"
-                                        alt="amb 1" style="z-index:2;right:40px;bottom:-30px;">
-                                    <img loading="lazy" class="img-fluid position-absolute img-ambulance" src="img/amb_carousel_2.png"
-                                        alt="amb 2" style="left:50px;bottom:-30px;">
+                                    <img loading="lazy" class="img-fluid position-absolute img-ambulance"
+                                        src="img/amb_carousel_1.png" alt="amb 1"
+                                        style="z-index:2;right:40px;bottom:-30px;" data-aos="fade-left" data-aos-easing="linear"
+                                        data-aos-duration="600">
+                                    <img loading="lazy" class="img-fluid position-absolute img-ambulance"
+                                        src="img/amb_carousel_2.png" alt="amb 2" style="left:50px;bottom:-30px;" data-aos="fade-right" data-aos-easing="linear"
+                                        data-aos-duration="700">
                                 </div>
                             </div>
-                            <div class="col-lg d-lg-block text-left p-0">
-                                <h2>¡Puedes comunicarte con nosotros en cualquier momento!</h2>
-                                <p class="mb-2">Si tienes alguna duda o quieres solicitar alguno de nuestros servicios,
+                            <div class="col-lg d-lg-block text-left p-0" >
+                                <h2 data-aos="fade-down" data-aos-easing="ease-out"
+                                data-aos-duration="700">¡Puedes comunicarte con nosotros en cualquier momento!</h2>
+                                <p class="mb-2" data-aos="fade-down" data-aos-easing="ease-out"
+                                data-aos-duration="800">Si tienes alguna duda o quieres solicitar alguno de nuestros servicios,
                                     puedes llamarnos a nuestro <strong>teléfono</strong> o puedes escribirnos a
                                     nuestro <strong>WhatsApp</strong>.</p>
 
                                 <div class="d-block w-100">
                                     <a href="tel:+56954188233"
                                         class="btn btn-lg btn-danger text-uppercase font-weight-bold letter-spacing-1 px-4 mb-2"
-                                        style="font-size:14px"><svg width="20" height="20" aria-hidden="true"
+                                        style="font-size:14px" data-aos="zoom-in-down" data-aos-easing="ease-out"
+                                        data-aos-duration="900"><svg width="20" height="20" aria-hidden="true"
                                             focusable="false" data-prefix="fas" data-icon="phone-alt"
                                             class="svg-inline--fa fa-phone-alt fa-w-16" role="img"
                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -163,7 +170,8 @@
                                         </svg>&nbsp;Llamar ahora</a>
                                     <a href="https://wa.me/56954188233"
                                         class="btn btn-lg btn-success text-uppercase font-weight-bold letter-spacing-1 px-4 mb-2"
-                                        style="font-size:14px"><svg width="20" height="20" aria-hidden="true"
+                                        style="font-size:14px" data-aos="zoom-in-down" data-aos-easing="ease-out"
+                                        data-aos-duration="900"><svg width="20" height="20" aria-hidden="true"
                                             focusable="false" data-prefix="fab" data-icon="whatsapp" class="svg-inline--fa fa-whatsapp
                                     fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                             <path fill="currentColor"
@@ -340,7 +348,7 @@
             </div>
 
             <div class="row my-4 position-relative" id="contact"
-                style="background: url(img/ambulancia_3.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;">
+                style="background: url(img/amb_5.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;">
                 <div class="col-sm-10 mx-auto p-4 text-white" style="z-index: 2;">
                     <h1 class="text-center font-weight-bold mb-3 text-light">Contacto</h1>
                     <div class="hr"></div>
@@ -430,17 +438,37 @@
                 <div class="col-sm-10 mx-auto">
                     <h1 class="text-center font-weight-bold mb-3 text-purple">Algunas de nuestras ambulancias</h1>
                     <div class="hr"></div>
-                    <p class="text-justify">Tenemos a disposición varios modelos de ambulancias las cuales utilizamos para llevar a cabo los
+                    <p class="text-justify">Tenemos a disposición varios modelos de ambulancias las cuales utilizamos
+                        para llevar a cabo los
                         distintos servicios que ofrecemos en la V Región.</p>
-                    <div class="row">
+                    <div class="row grid-container-imgs">
                         <div class="col-sm my-2">
-                            <img loading="lazy" class="img-fluid rounded" src="img/ambulancia_1.jpg" alt="modelo de ambulancia 1">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_1.jpg"
+                                alt="modelo de ambulancia 1">
                         </div>
                         <div class="col-sm my-2">
-                            <img loading="lazy" class="img-fluid rounded" src="img/ambulancia_2.jpg" alt="modelo de ambulancia 2">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_2.jpg"
+                                alt="modelo de ambulancia 2">
                         </div>
                         <div class="col-sm my-2">
-                            <img loading="lazy" class="img-fluid rounded" src="img/ambulancia_4.jpg" alt="modelo de ambulancia 4">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_6.jpg"
+                                alt="modelo de ambulancia 3">
+                        </div>
+                        <div class="col-sm my-2">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_7.jpg"
+                                alt="modelo de ambulancia 4">
+                        </div>
+                        <div class="col-sm my-2">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_8.jpg"
+                                alt="modelo de ambulancia 5">
+                        </div>
+                        <div class="col-sm my-2">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_9.jpg"
+                                alt="modelo de ambulancia 6">
+                        </div>
+                        <div class="col-sm my-2">
+                            <img loading="lazy" class="img-fluid rounded" src="img/amb_10.jpg"
+                                alt="modelo de ambulancia 7">
                         </div>
                     </div>
                 </div>
@@ -455,17 +483,17 @@
                         adipisci culpa tempora corporis laborum? Nostrum numquam assumenda eum earum voluptatum
                         necessitatibus harum sint tempore beatae dicta.</p>
 
-                    <div class="row">
-                        <div class="col-sm my-2">
+                    <div class="row grid-container-imgs">
+                        <div class="col-sm my-2 grid-item">
                             <img loading="lazy" class="img-fluid rounded" src="img/no_image.jpg" alt="trabajador 1">
                         </div>
-                        <div class="col-sm my-2">
+                        <div class="col-sm my-2 grid-item">
                             <img loading="lazy" class="img-fluid rounded" src="img/no_image.jpg" alt="trabajador 2">
                         </div>
-                        <div class="col-sm my-2">
+                        <div class="col-sm my-2 grid-item">
                             <img loading="lazy" class="img-fluid rounded" src="img/no_image.jpg" alt="trabajador 3">
                         </div>
-                        <div class="col-sm my-2">
+                        <div class="col-sm my-2 grid-item">
                             <img loading="lazy" class="img-fluid rounded" src="img/no_image.jpg" alt="trabajador 3">
                         </div>
                     </div>
@@ -604,6 +632,7 @@
         </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

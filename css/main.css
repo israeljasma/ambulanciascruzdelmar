@@ -69,6 +69,11 @@ iframe {
     content: "";
 }
 
+.grid-container-imgs {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+}
+
 .copyright a {
     color: #383b3e;
 }

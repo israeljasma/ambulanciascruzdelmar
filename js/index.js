@@ -1,4 +1,6 @@
 
+AOS.init();
+
 $(".gallery").magnificPopup({
     delegate: 'a',
     type: 'image',
