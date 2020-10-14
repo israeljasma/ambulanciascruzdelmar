@@ -176,6 +176,22 @@ iframe {
     .carousel-caption {
         top: 25%;
     }
+
+    .fb-page, .instagram-media {
+        width: 100% !important;
+        margin: 0 5px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .container-rrss {
+        flex-direction: column !important;
+    }
+    
+    .fb-page, .instagram-media {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
