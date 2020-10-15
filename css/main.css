@@ -116,6 +116,11 @@ iframe {
     margin: 60px auto;
 }
 
+.rrss {
+    padding: 0 2px;
+    text-align: center;
+}
+
 .gallery-section{
     width: 100%;
     padding: 60px 0;
