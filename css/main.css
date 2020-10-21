@@ -122,7 +122,7 @@ iframe {
 }
 
 .count {
-    font-size: 22px;
+    font-size: 34px;
 }
 
 .gallery-section{
@@ -197,7 +197,9 @@ iframe {
     .main-section h2 {
         font-size: 24px;
     }
-
+    .count {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 576px) {
