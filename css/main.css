@@ -52,9 +52,27 @@ iframe {
 /* CUSTOM Classes */
 .main-section {
     background:#01744F;
+    /*background: linear-gradient(rgba(2, 70, 44, 0.5), rgba(6, 49, 26, 0.5)) , url('/img/img_main.jpg') center center;*/
+    background-size: cover;
     width:100%;
     height:70vh;
     color: whitesmoke;
+}
+.main-section__2 {
+    /*background: linear-gradient(rgba(2, 70, 44, 0.5), rgba(6, 49, 26, 0.5)) , url('/img/img_main.jpg') center center;*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/img_main.jpg') center center;
+    background-size: cover;
+    width:100%;
+    height:90vh;
+    color: whitesmoke;
+}
+
+.main-img {
+    min-width: 540px;
+}
+
+.main-section section {
+    padding-top:8rem;
 }
 
 #contact::after {
@@ -209,6 +227,10 @@ iframe {
     
     .fb-page, .instagram-media {
         margin: 0 auto;
+    }
+
+    .main-section section {
+        padding-top: 6rem;
     }
 }
 
