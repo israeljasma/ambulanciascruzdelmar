@@ -218,6 +218,36 @@ iframe {
     .count {
         font-size: 26px;
     }
+
+    .grid-container-imgs {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-section__content h2 {
+        font-size: 20px;
+    }
+
+    .main-section__content p {
+        font-size: 16px;
+    }
+
+    .main-section {
+        height: 90vh;
+    }
+
+    .grid-container-imgs {
+        grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    }
+
+    .navbar {
+        width: 320px;
+    }
+
+    .navbar-brand svg {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 576px) {
