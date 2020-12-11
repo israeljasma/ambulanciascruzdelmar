@@ -143,6 +143,10 @@ iframe {
     font-size: 34px;
 }
 
+.img-payment-methods {
+    width: 200px;
+}
+
 .gallery-section{
     width: 100%;
     padding: 60px 0;
@@ -196,6 +200,10 @@ iframe {
 @media screen and (max-width:480px) {
     .gallery-section .image {
         flex: 100%;
+    }
+
+    .img-payment-methods {
+        width: 100%;
     }
 }
 
